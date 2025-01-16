@@ -1,0 +1,167 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.br{
+    border: 2px solid red;
+}
+body{
+    height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    max-width: 85%;
+    margin-inline: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    flex-direction: column;
+}
+
+
+.form{
+    margin: auto;
+    width: 90%;
+}
+.form:first-child{
+    margin-top: 2rem;
+}
+.inp,#btn{
+    padding: 0.7rem;
+    width: 90%;
+    margin-inline: auto;
+    display: block;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+#btn{
+    padding: 1rem;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    font-size: 0,5rem;
+}
+h1{
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+.left{
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.left p{
+  font-size: 1rem;
+  display: inline;
+  color: rgba(240, 233, 233, 0.925);
+}
+.right{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+.sp{
+    color: hsl(0, 100%, 74%);
+    font-size: 0.7rem;
+}
+.color{
+    color: hsl(0, 100%, 74%);
+}
+.gr{
+    color: hsl(250, 5%, 45%) ;
+    display: inline;
+    font-size: 0.7rem;
+}
+.last{
+    margin: auto;
+    width: 90%;
+    padding-bottom: 0.9rem;   
+}
+span{
+    color: hsl(0, 100%, 74%);
+    font-size: 0.8rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: end;
+    margin-inline: auto;
+    align-items: start;
+    width: 85%;
+}
+.display{
+    display: none;
+}
+
+input{
+    outline: none;
+    border: none;
+    border: 1px solid  hsl(250, 5%, 45%);  
+    caret-color: hsl(248, 32%, 49%);
+}
+.inpStyle{
+      border: 1px solid  hsl(0, 100%, 74%);  
+      margin: 0.7rem;         
+}
+@media screen  and (max-width:750px){
+    
+    body{
+        height: 100vh;
+        background-image: url(images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 95%;
+        margin-inline: auto;
+        justify-content: space-around;
+        align-items: center;
+    }   
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        background-color: hsl(248, 32%, 49%);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .container:first-child{
+        text-align: center;
+    }
+    h1{
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+}
